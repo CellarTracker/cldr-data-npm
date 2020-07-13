@@ -89,6 +89,9 @@ if (process.env.CLDR_URL) {
   }
 }
 
+// Default to 'full' coverage
+coverage = 'full';
+
 if (process.env.CLDR_COVERAGE) {
   coverage = process.env.CLDR_COVERAGE;
 } else if (parentPackage && parentPackage["cldr-data-coverage"] && (
